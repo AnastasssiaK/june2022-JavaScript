@@ -258,7 +258,7 @@
     // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
     let books = [
-        {name: 'The India Story', pages: 365, author: 'Bimal Jalal', genres: ['drama', 'fantasy']},
+        {name: 'The India Story', pages: 365, authors: 'Bimal Jalal', genres: ['drama', 'fantasy']},
         {name: 'Listen to Your Heart: The London Adventure', pages: 287, authors: 'Ruskin Bond', genres: ['fiction', 'fantasy', 'legend']},
         {name: 'Business of Sports: The Winning Formula fpr Success', pages: 198, authors: 'Vinit Karnik', genres: ['realistic fiction']},
         {name: 'A Place Called Home', pages: 421, authors: 'VP Venkaiah Naidu', genres: ['horror', 'fantasy', 'drama', 'fable']},
@@ -282,10 +282,10 @@
     console.log(books.sort((prev, next) => next.name.length - prev.name.length).slice(0,1));
 
     // - знайти книжку/ки які писали 2 автори
-
+    console.log(books.filter(value => value.authors.length === 2));
 
     // - знайти книжку/ки які писав 1 автор
-
+    console.log(books.filter(value => value.authors.length === 1));
 
     // - вісортувати книжки по кількості сторінок по зростанню
 
