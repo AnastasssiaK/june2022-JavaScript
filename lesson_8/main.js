@@ -66,6 +66,9 @@ console.log(clients);
 //???????????????
 console.log(clients.sort((prev, next) => prev.order.length - next.order.length));
 
+let clientssort = clients.sort((cl1, cl2) => cl2.order.length - cl1.order.length);
+console.log(clientssort);
+
 // - Створити функцію конструктор яка дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
 // -- drive () - яка виводить в консоль `їдемо зі швидкістю ${максимальна швидкість} на годину`
 // -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
@@ -186,6 +189,7 @@ let princesses = [
     new Princess('Anna', 15, 34),
     new Princess('Elza', 17, 38),
 ];
+
 console.log(princesses);
 
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
@@ -214,3 +218,5 @@ console.log(findPrincess(princesses,prince));
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 console.log(princesses.find((princess) => princess.footSize === prince.shoe));
+
+
