@@ -1,0 +1,19 @@
+h1, h2 {
+    text-align: center;
+}
+.postDetails {
+    border: 1px solid black;
+    padding: 10px 40px 20px;
+    margin: 0 20px;
+}
+.commentsBox {
+    margin: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.commentBox {
+    border: 1px solid black;
+    padding: 5px 20px 10px;
+}

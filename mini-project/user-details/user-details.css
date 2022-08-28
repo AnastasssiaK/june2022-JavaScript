@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+.user-details {
+    margin: 0 40px;
+    border: 1px solid black;
+    padding: 20px 60px;
+}
+.postOfCurrentUserBtn {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.postOfCurrentUserBtn:hover {
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.postsOfCurrentUser {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.postOfCurrentUser {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 20px 10px;
+    text-align: center;
+}
