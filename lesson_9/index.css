@@ -1,0 +1,29 @@
+h1, h2, h3, .member div {
+    text-align: center;
+}
+.container, .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    margin: 10px 20px;
+}
+.member {
+    border: 5px solid cornflowerblue;
+    padding: 10px 40px 20px;
+}
+.member img {
+    max-height: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+.course {
+    border: 10px solid silver;
+    background-color: lightblue;
+    padding: 0 40px 10px;
+}
+.duration {
+    display: flex;
+    justify-content: space-evenly;
+}
