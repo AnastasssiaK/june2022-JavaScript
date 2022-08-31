@@ -207,14 +207,34 @@ let coursesAndDurationArray = [
 //
 //     - Створити довільний елемент з id = text.  Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 
-document.getElementsByTagName('button')[0].onclick = function() {
-    document.getElementById('text').hidden = false;
-}
+// let input = document.getElementById('text');
+// input.innerText = 'Text';
+
+// document.getElementsByTagName('button')[0].onclick = function() {
+//     document.getElementById('text').hidden = true;
+// }
 
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
+
+// let ageInput = document.createElement('input');
+// ageInput.placeholder = 'Write your age';
 //
+// document.body.appendChild(ageInput);
 //
+// document.getElementsByTagName('button')[0].onclick = function () {
+//     let value = ageInput.value;
+//     if (value < 18) {
+//         alert('You are under 18 years');
+//     }
+//         console.log(value)
+// }
+
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+
+let strNum = document.createElement('input');
+
+let cellNum = document.createElement('input');
+let contents = document.createElement('input');
 
